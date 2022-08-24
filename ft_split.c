@@ -78,7 +78,7 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	str = (char **)malloc(sizeof(char *)
-			* count_str((char *)s, c) + 1);
+			* (count_str((char *)s, c) + 1));
 	if (!str)
 		return (NULL);
 	i[0] = 0;
